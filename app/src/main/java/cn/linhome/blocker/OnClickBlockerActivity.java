@@ -1,11 +1,12 @@
-package com.fanwe.blocker;
+package cn.linhome.blocker;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 
-import com.fanwe.lib.blocker.SDOnClickBlocker;
+import cn.linhome.lib.blocker.SDOnClickBlocker;
+
 
 public class OnClickBlockerActivity extends AppCompatActivity
 {

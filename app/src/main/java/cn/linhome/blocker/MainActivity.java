@@ -1,4 +1,4 @@
-package com.fanwe.blocker;
+package cn.linhome.blocker;
 
 import android.content.Intent;
 import android.os.Bundle;
