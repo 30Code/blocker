@@ -5,7 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 
-import cn.linhome.lib.blocker.SDOnClickBlocker;
+import cn.linhome.lib.blocker.FOnClickBlocker;
 
 
 public class OnClickBlockerActivity extends AppCompatActivity
@@ -33,8 +33,8 @@ public class OnClickBlockerActivity extends AppCompatActivity
         });
 
         //全局拦截Button，拦截间隔为1000毫秒
-        SDOnClickBlocker.setGlobalBlockDuration(1000); //设置全局拦截间隔
-        SDOnClickBlocker.setOnClickListener(findViewById(R.id.btn_global), new View.OnClickListener()
+        FOnClickBlocker.setGlobalBlockDuration(1000); //设置全局拦截间隔
+        FOnClickBlocker.setOnClickListener(findViewById(R.id.btn_global), new View.OnClickListener()
         {
             @Override
             public void onClick(View v)
@@ -45,7 +45,7 @@ public class OnClickBlockerActivity extends AppCompatActivity
         });
 
         //单独拦截Button，拦截间隔为2000毫秒
-        SDOnClickBlocker.setOnClickListener(findViewById(R.id.btn_private), 2000, new View.OnClickListener()
+        FOnClickBlocker.setOnClickListener(findViewById(R.id.btn_private), 2000, new View.OnClickListener()
         {
             @Override
             public void onClick(View v)
